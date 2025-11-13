@@ -1,0 +1,10 @@
+{
+  "name": "portfel-inwestycyjny-root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix frontend run start",
+    "dev": "npm --prefix frontend run dev",
+    "install-frontend": "npm --prefix frontend install"
+  }
+}
