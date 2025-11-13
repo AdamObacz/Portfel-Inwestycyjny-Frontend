@@ -6,5 +6,10 @@
     "start": "npm --prefix frontend run start",
     "dev": "npm --prefix frontend run dev",
     "install-frontend": "npm --prefix frontend install"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
   }
 }
