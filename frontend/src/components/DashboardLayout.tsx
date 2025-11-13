@@ -24,10 +24,10 @@ const menuItems = [
   { id: "transactions", label: "Moje transakcje", icon: TrendingUp },
   { id: "portfolio", label: "Portfel", icon: Wallet },
   { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { id: "analytics", label: "Analytics", icon: BarChart3 },
+  { id: "analytics", label: "Analiza", icon: BarChart3 },
   { id: "reports", label: "Raporty", icon: FileText },
-  { id: "users", label: "Users", icon: Users },
-  { id: "settings", label: "Settings", icon: Settings },
+  { id: "users", label: "Użytkownicy", icon: Users },
+  { id: "settings", label: "Ustawienia", icon: Settings },
 ];
 
 export default function DashboardLayout({ 
