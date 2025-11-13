@@ -1,4 +1,4 @@
-export default function StartSection() {
+export default function TransactionSection() {
     return (
         
         <div className="space-y-6 bg-black text-white p-6 rounded-lg font-sans">
@@ -62,20 +62,8 @@ export default function StartSection() {
                 </table>
             </div>
             <div>
-                <div>
-                    <p>Razem Kupione</p>
-                    <h4>1500.00 PLN</h4>
-                </div>
-                <div>
-                    <p>Razem Sprzedane</p>
-                    <h4>500.00 USD</h4>
-                </div>
-                <div>
-                    <p>Saldo</p>
-                    <h4>1000.00 PLN</h4>    
-                </div>
-
-                
+                <h2>Witaj!</h2>
+                <p>Zarządzaj swoimi finansami i inwestycjami w jednym miejscu.</p>
             </div>
         </div>
             
