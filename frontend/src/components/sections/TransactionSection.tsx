@@ -61,10 +61,6 @@ export default function TransactionSection() {
                     </tbody>
                 </table>
             </div>
-            <div>
-                <h2>Witaj!</h2>
-                <p>Zarządzaj swoimi finansami i inwestycjami w jednym miejscu.</p>
-            </div>
         </div>
             
         
