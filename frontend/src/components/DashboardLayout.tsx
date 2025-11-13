@@ -47,8 +47,8 @@ export default function DashboardLayout({
         >
           {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
-      </div>
-
+      </div> 
+      
       {/* Sidebar */}
       <aside
         className={cn(
