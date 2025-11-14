@@ -1,17 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { 
+import {
   Home,
-  LayoutDashboard, 
-  BarChart3, 
-  Users, 
-  Settings, 
+  LayoutDashboard,
+  BarChart3,
+  Users,
+  Settings,
   Menu,
   X,
   TrendingUp,
   FileText,
-  Wallet
+  Wallet,
 } from "lucide-react";
+import { testApi } from "@/lib/api";
+import { useTranslation } from "react-i18next";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -30,12 +32,25 @@ const menuItems = [
   { id: "settings", label: "Ustawienia", icon: Settings },
 ];
 
-export default function DashboardLayout({ 
-  children, 
-  activeSection, 
-  onSectionChange 
+export default function DashboardLayout({
+  children,
+  activeSection,
+  onSectionChange,
 }: DashboardLayoutProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+  alert(t("errors.internal_server_error"));
+  useEffect(() => {
+    async function test() {
+      const result = await testApi();
+      if (result.isError) {
+        alert(t(result.translationKey));
+        return;
+      }
+    }
+
+    test();
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -45,25 +60,29 @@ export default function DashboardLayout({
           className="p-2 rounded-md border border-border hover:bg-accent transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          {isMobileMenuOpen ? (
+            <X className="w-5 h-5" />
+          ) : (
+            <Menu className="w-5 h-5" />
+          )}
         </button>
-      </div> 
-      
+      </div>
+
       {/* Sidebar */}
       <aside
         className={cn(
           "fixed top-0 left-0 h-full w-64 bg-card border-r border-border transition-transform duration-300 z-40",
-          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+          isMobileMenuOpen
+            ? "translate-x-0"
+            : "-translate-x-full lg:translate-x-0"
         )}
       >
         <div className="p-6">
-          <h1 className="text-2xl font-bold text-foreground mb-8">
-            Dashboard
-          </h1>
+          <h1 className="text-2xl font-bold text-foreground mb-8">Dashboard</h1>
 
           <nav className="space-y-2">
             {menuItems.map((item) => {
-const Icon = item.icon;
+              const Icon = item.icon;
               const isActive = activeSection === item.id;
 
               return (
@@ -99,9 +118,7 @@ const Icon = item.icon;
 
       {/* Main content */}
       <main className="lg:ml-64 min-h-screen">
-        <div className="p-6 lg:p-8">
-          {children}
-        </div>
+        <div className="p-6 lg:p-8">{children}</div>
       </main>
     </div>
   );
