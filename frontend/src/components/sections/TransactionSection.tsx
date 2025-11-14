@@ -3,8 +3,8 @@ export default function TransactionSection() {
         
         <div className="space-y-6 text-white p-6 rounded-lg font-sans">
             <div className="flex flex-col">
-                <h1 className="text-5xl">Moje Transakcje</h1>
-                <p>Historia wszystkich transakcji</p>
+                <h1 className="text-5xl px-1 py-1">Moje Transakcje</h1>
+                <p className="px-2 py-1 text-gray-300">Historia wszystkich twoich transakcji i operacji</p>
             </div>
             {/* Wyszukiwarka transakcji */}
             <div className="bg-[#161616] p-4 rounded-lg space-x-1 space-y-6 flex flex-col shadow-gray-500/50 shadow-md">
@@ -16,7 +16,7 @@ export default function TransactionSection() {
                 />
             </div>
             {/* tabela z historią transakcji */}
-            <div className="bg-[#161616] p-4 rounded-lg">
+            <div className="bg-[#161616] p-4 rounded-lg shadow-gray-500/50 shadow-md">
                 <h2 className="text-2xl">Historia transakcji</h2>
                 <table className="min-w-full bg-[#161616] p-1 scroll-m-3 overflow-x-auto">
                     <thead>
@@ -33,7 +33,7 @@ export default function TransactionSection() {
                     <tbody>
                         {/* Przykładowe dane transakcji */}
                         <tr className="border-b-2">
-                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
@@ -42,7 +42,7 @@ export default function TransactionSection() {
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
                         <tr className="border-b-2">
-                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
@@ -51,7 +51,7 @@ export default function TransactionSection() {
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
                         <tr className="border-b-2">
-                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
@@ -60,7 +60,7 @@ export default function TransactionSection() {
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
                         <tr className="border-b-2">
-                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
@@ -69,7 +69,7 @@ export default function TransactionSection() {
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
                         <tr className="border-b-2">
-                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
@@ -78,7 +78,7 @@ export default function TransactionSection() {
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
                         <tr className="border-b-2">
-                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
