@@ -39,9 +39,7 @@ export default function DashboardLayout({
 }: DashboardLayoutProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
-  // Debug alerts removed to avoid noisy UI during normal usage.
-  // If you need to re-enable runtime alerts for errors, uncomment below.
-  // alert(t("errors.internal_server_error"));
+  alert(t("errors.internal_server_error"));
   useEffect(() => {
     async function test() {
       const result = await testApi();
@@ -50,6 +48,7 @@ export default function DashboardLayout({
         return;
       }
     }
+
     test();
   }, []);
 
@@ -72,14 +71,14 @@ export default function DashboardLayout({
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed top-0 left-0 h-full w-64 bg-card border-r border-border transition-transform duration-300 z-40",
+          "fixed top-0 left-0 h-full w-64 bg-card bg-[#161616] border-r border-border transition-transform duration-300 z-40",
           isMobileMenuOpen
             ? "translate-x-0"
             : "-translate-x-full lg:translate-x-0"
         )}
       >
         <div className="p-6">
-          <h1 className="text-2xl font-bold text-foreground mb-8">Dashboard</h1>
+          <h1 className="text-2xl font-bold text-foreground mb-8 ml-12">Dashboard</h1>
 
           <nav className="space-y-2">
             {menuItems.map((item) => {
