@@ -39,7 +39,9 @@ export default function DashboardLayout({
 }: DashboardLayoutProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
-  alert(t("errors.internal_server_error"));
+  // Debug alerts removed to avoid noisy UI during normal usage.
+  // If you need to re-enable runtime alerts for errors, uncomment below.
+  // alert(t("errors.internal_server_error"));
   useEffect(() => {
     async function test() {
       const result = await testApi();
@@ -48,7 +50,6 @@ export default function DashboardLayout({
         return;
       }
     }
-
     test();
   }, []);
 
