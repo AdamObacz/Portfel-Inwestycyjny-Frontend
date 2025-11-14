@@ -18,45 +18,73 @@ export default function TransactionSection() {
             {/* tabela z historią transakcji */}
             <div className="bg-[#161616] p-4 rounded-lg">
                 <h2 className="text-2xl">Historia transakcji</h2>
-                <table className="min-w-full border bg-[#161616] p-1">
+                <table className="min-w-full bg-[#161616] p-1 scroll-m-3 overflow-x-auto">
                     <thead>
-                        <tr className="bg-[#161616]">
-                            <th className="border border-gray-300 px-4 py-2">Data</th>
-                            <th className="border border-gray-300 px-4 py-2">Typ</th>
-                            <th className="border border-gray-300 px-4 py-2">Kwota</th>
-                            <th className="border border-gray-300 px-4 py-2">Waluta</th>
-                            <th className="border border-gray-300 px-4 py-2">Status</th>
+                        <tr className="bg-[#161616] border-b-2">
+                            <th className=" px-4 py-2">Inwestycja</th>
+                            <th className=" px-4 py-2">Typ</th>
+                            <th className=" px-4 py-2">Ilość</th>
+                            <th className=" px-4 py-2">Cena</th>
+                            <th className=" px-4 py-2">Zysk/Strata</th>
+                            <th className=" px-4 py-2">Data/Czas</th>
+                            <th className=" px-4 py-2">Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         {/* Przykładowe dane transakcji */}
-                        <tr>
-                            <td className="border border-gray-300 px-4 py-2">2024-06-01</td>
-                            <td className="border border-gray-300 px-4 py-2">Kupno</td>
-                            <td className="border border-gray-300 px-4 py-2">1000.00</td>
-                            <td className="border border-gray-300 px-4 py-2">PLN</td>
-                            <td className="border border-gray-300 px-4 py-2">Zakończona</td>
+                        <tr className="border-b-2">
+                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 text-center">10</td>
+                            <td className=" px-4 py-4 text-center">$1000.00</td>
+                            <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
+                            <td className=" px-4 py-4 text-center">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
-                        <tr>
-                            <td className="border border-gray-300 px-4 py-2">2024-05-28</td>
-                            <td className="border border-gray-300 px-4 py-2">Sprzedaż</td>
-                            <td className="border border-gray-300 px-4 py-2">500.00</td>
-                            <td className="border border-gray-300 px-4 py-2">USD</td>
-                            <td className="border border-gray-300 px-4 py-2">Zakończona</td>
+                        <tr className="border-b-2">
+                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 text-center">10</td>
+                            <td className=" px-4 py-4 text-center">$1000.00</td>
+                            <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
+                            <td className=" px-4 py-4 text-center">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
-                        <tr>
-                            <td className="border border-gray-300 px-4 py-2">2024-05-28</td>
-                            <td className="border border-gray-300 px-4 py-2">Sprzedaż</td>
-                            <td className="border border-gray-300 px-4 py-2">500.00</td>
-                            <td className="border border-gray-300 px-4 py-2">USD</td>
-                            <td className="border border-gray-300 px-4 py-2">Zakończona</td>
+                        <tr className="border-b-2">
+                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 text-center">10</td>
+                            <td className=" px-4 py-4 text-center">$1000.00</td>
+                            <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
+                            <td className=" px-4 py-4 text-center">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
-                        <tr>
-                            <td className="border border-gray-300 px-4 py-2">2024-05-28</td>
-                            <td className="border border-gray-300 px-4 py-2">Sprzedaż</td>
-                            <td className="border border-gray-300 px-4 py-2">500.00</td>
-                            <td className="border border-gray-300 px-4 py-2">USD</td>
-                            <td className="border border-gray-300 px-4 py-2">Zakończona</td>
+                        <tr className="border-b-2">
+                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 text-center">10</td>
+                            <td className=" px-4 py-4 text-center">$1000.00</td>
+                            <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
+                            <td className=" px-4 py-4 text-center">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
+                        </tr>
+                        <tr className="border-b-2">
+                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 text-center">10</td>
+                            <td className=" px-4 py-4 text-center">$1000.00</td>
+                            <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
+                            <td className=" px-4 py-4 text-center">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
+                        </tr>
+                        <tr className="border-b-2">
+                            <td className=" px-4 py-4">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 text-center">10</td>
+                            <td className=" px-4 py-4 text-center">$1000.00</td>
+                            <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
+                            <td className=" px-4 py-4 text-center">2024-06-01</td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
                     </tbody>
                 </table>
@@ -64,16 +92,16 @@ export default function TransactionSection() {
             {/* Podsumowanie transakcji */}
             <div className="flex space-x-10">
                 <div className="h-[100px] flex flex-col bg-[#161616] p-4 rounded-lg w-1/3 shadow-red-700/50 shadow-md">
-                    <h3 className="text-lg">Razem Kupione</h3>
-                    <p className="text-red-700 text-3xl">-2600$</p>
+                    <h3 className="text-lg font-semibold">Razem Kupione</h3>
+                    <p className="text-red-700 text-3xl font-bold">-2600$</p>
                 </div>
                 <div className="h-[100px] flex flex-col bg-[#161616] p-4 rounded-lg w-1/3 shadow-blue-700/50 shadow-md">
-                    <h3 className="text-lg">Razem Sprzedane</h3>
-                    <p className="text-blue-700 text-3xl">+3100$</p>
+                    <h3 className="text-lg font-semibold">Razem Sprzedane</h3>
+                    <p className="text-blue-700 text-3xl font-bold">+3100$</p>
                 </div>
                 <div className="h-[100px] flex flex-col bg-[#161616] p-4 rounded-lg w-1/3 shadow-green-400/50 shadow-md">
-                    <h3 className="text-lg">Zysk/Strata</h3>
-                    <p className="text-green-400 text-3xl">+500$</p>
+                    <h3 className="text-lg font-semibold">Razem dywidenda</h3>
+                    <p className="text-green-400 text-3xl font-bold">+500$</p>
                 </div>
             </div>
 
