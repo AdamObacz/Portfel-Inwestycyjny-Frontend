@@ -48,67 +48,71 @@ export default function StartSection() {
                     </div>
                 </div>
             </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                {/* szybkie akcje */}
+                <div className="bg-[#161616] w-full rounded-lg shadow-sm shadow-gray-500 p-4">
+                    <h4 className="font-semibold mb-3">Szybkie akcje</h4>
+                    <div className="flex flex-col items-center gap-4">
+                        <button className="w-11/12 flex justify-between items-center border-[1px] border-gray-500 rounded-lg py-2 px-3 text-sm font-semibold hover:bg-gray-700/20 transition-colors">
+                            Kup Bitcoin
+                            <ArrowRight size={16} />
+                        </button>
 
-            {/* szybkie akcje */}
-            <div className="bg-[#161616] w-full h-52 rounded-lg shadow-sm shadow-gray-500">
-                <h4 className="font-semibold p-4">Szybkie akcje</h4>
-                <div className="gap-4 flex flex-col items-center h-full">
-                    <button className="w-11/12 flex justify-between items-center border-[1px] border-gray-500 rounded-lg py-1.5 px-3 text-sm font-semibold">
-                        Kup Bitcoin
-                        <ArrowRight size={16} />
-                    </button>
+                        <button className="w-11/12 flex justify-between items-center border-[1px] border-gray-500 rounded-lg py-2 px-3 text-sm font-semibold hover:bg-gray-700/20 transition-colors">
+                            Sprzedaj Etherium
+                            <ArrowRight size={16} />
+                        </button>
 
-                    <button className="w-11/12 flex justify-between items-center border-[1px] border-gray-500 rounded-lg py-1.5 px-3 text-sm font-semibold">
-                        Sprzedaj Etherium
-                        <ArrowRight size={16} />
-                    </button>
+                        <button className="w-11/12 flex justify-between items-center border-[1px] border-gray-500 rounded-lg py-2 px-3 text-sm font-semibold hover:bg-gray-700/20 transition-colors">
+                            Wyślij transfer
+                            <ArrowRight size={16} />
+                        </button>
+                    </div>
+                </div>
 
-                    <button className="w-11/12 flex justify-between items-center border-[1px] border-gray-500 rounded-lg py-1.5 px-3 text-sm font-semibold">
-                        Wyślij tansfer
-                        <ArrowRight size={16} />
-                    </button>
+                {/* ostatnie transakcje */}
+                <div className="bg-[#161616] w-full rounded-lg shadow-sm shadow-gray-500 p-2">
+                    <h4 className="font-semibold px-4 py-3">Ostatnie transakcje</h4>
+                    <div className="flex justify-between px-2 py-2 border-b-[1px] border-gray-700 w-full">
+                        <div>
+                            <p className="font-semibold">Bitcoin (BTC)</p>
+                            <p className="text-gray-400 text-xs">Dziś</p>
+                        </div>
+                        <div>
+                            <p className="text-red-700 font-bold">-$5,000.00</p>
+                        </div>
+                    </div>
+
+                    <div className="flex justify-between px-2 py-2 border-b-[1px] border-gray-700 w-full">
+                        <div>
+                            <p className="font-semibold">Etherium (ETH)</p>
+                            <p className="text-gray-400 text-xs">Wczoraj</p>
+                        </div>
+                        <div>
+                            <p className="text-green-400 font-bold">+$2,250.00</p>
+                        </div>
+                    </div>
+
+                    <div className="flex justify-between px-2 py-2">
+                        <div>
+                            <p className="font-semibold">Transfer bankowy</p>
+                            <p className="text-gray-400 text-xs">3 dni temu</p>
+                        </div>
+                        <div>
+                            <p className="text-green-400 font-bold">+$5,000.00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            {/* ostatnie transakcje */}
-            <div>
-                <h4>Ostatnie transakcje</h4>
-                <div>
-                    <div>
-                        <p>Bitcoin (BTC)</p>
-                        <p>Dziś</p>
-                    </div>
-                    <div>
-                        <p className="text-red-700">-$2500.00</p>
-                    </div>
-                </div>
 
-                <div>
-                    <div>
-                        <p>Etherium (ETH)</p>
-                        <p>Wczoraj</p>
-                    </div>
-                    <div>
-                        <p className="text-green-400">+$500.00</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <p>Transfer bankowy</p>
-                        <p>3 dni temu</p>
-                    </div>
-                    <div>
-                        <p className="text-green-400">+$5000.00</p>
-                    </div>
-                </div>
-            </div>
 
             {/* porady */}
-            <div>
-                <h4>Porady inwestycyjne</h4>
-                <p>Dywersyfikacja portfela kryptowalut to klucz do zarządzania ryzykiem. Rozważ inwestycję w Bitcoin, Ethereum i inne kryptowaluty o solidnych fundamentach. Pamiętaj: nigdy nie inwestuj więcej niż możesz stracić!</p>
-                <p>Dowiedz się więcej</p>
+            <div className="bg-gradient-to-tr from-[rgb(29,78,216,0.1)] to-[rgb(29,78,216,0.05)] w-full rounded-lg shadow-sm shadow-gray-500 p-6">
+                <h4 className="font-bold text-lg mb-4">Porady inwestycyjne</h4>
+                <p className="text-gray-400 text-sm mb-2.5">Dywersyfikacja portfela kryptowalut to klucz do zarządzania ryzykiem. Rozważ inwestycję w Bitcoin, Ethereum i inne kryptowaluty o solidnych fundamentach. Pamiętaj: nigdy nie inwestuj więcej niż możesz stracić!</p>
+                <button className="border-gray-700 border-[1px] rounded-lg w-full p-2 text-base font-semibold hover:bg-gray-700/20 transition-colors">Dowiedz się więcej</button>
             </div>
         </>
     )

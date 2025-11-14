@@ -6,6 +6,7 @@ export default function TransactionSection() {
                 <h1 className="text-5xl px-1 py-1">Moje Transakcje</h1>
                 <p className="px-2 py-1 text-gray-300">Historia wszystkich twoich transakcji i operacji</p>
             </div>
+
             {/* Wyszukiwarka transakcji */}
             <div className="bg-[#161616] p-4 rounded-lg space-x-1 space-y-6 flex flex-col shadow-gray-500/50 shadow-md">
                 <h3 className="text-3xl">Wyszukaj transakcje</h3>
@@ -15,6 +16,7 @@ export default function TransactionSection() {
                     className="border border-white rounded px-2 py-1 bg-[#272727] text-white"
                 />
             </div>
+
             {/* tabela z historią transakcji */}
             <div className="bg-[#161616] p-4 rounded-lg shadow-gray-500/50 shadow-md">
                 <h2 className="text-2xl">Historia transakcji</h2>
