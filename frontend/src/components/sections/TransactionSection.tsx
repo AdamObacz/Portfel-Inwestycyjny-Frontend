@@ -32,7 +32,7 @@ export default function TransactionSection() {
                     </thead>
                     <tbody>
                         {/* Przykładowe dane transakcji */}
-                        <tr className="border-b-[1px]">
+                        <tr className="border-b-[1px] hover:bg-gray-700/20 transition-colors">
                             <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center text-sm">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
@@ -41,45 +41,45 @@ export default function TransactionSection() {
                             <td className=" px-4 py-4 text-center">2024-06-01</td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
-                        <tr className="border-b-[1px]">
+                        <tr className="border-b-[1px] hover:bg-gray-700/20 transition-colors">
                             <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
-                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center text-sm">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
                             <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
                             <td className=" px-4 py-4 text-center">2024-06-01</td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
-                        <tr className="border-b-[1px]">
+                        <tr className="border-b-[1px] hover:bg-gray-700/20 transition-colors">
                             <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
-                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center text-sm ">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
                             <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
                             <td className=" px-4 py-4 text-center">2024-06-01</td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
-                        <tr className="border-b-[1px]">
+                        <tr className="border-b-[1px] hover:bg-gray-700/20 transition-colors">
                             <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
-                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center text-sm">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
                             <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
                             <td className=" px-4 py-4 text-center">2024-06-01</td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
-                        <tr className="border-b-[1px]">
+                        <tr className="border-b-[1px] hover:bg-gray-700/20 transition-colors">
                             <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
-                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center text-sm">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
                             <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
                             <td className=" px-4 py-4 text-center">2024-06-01</td>
                             <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-24 text-center">Zakończona</p></td>
                         </tr>
-                        <tr className="border-b-[1px]">
+                        <tr className="border-b-[1px] hover:bg-gray-700/20 transition-colors">
                             <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
-                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center text-sm">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
                             <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
@@ -91,7 +91,7 @@ export default function TransactionSection() {
             </div>
             {/* Podsumowanie transakcji */}
             <div className="flex space-x-10">
-                <div className="h-[100px] flex flex-col bg-[#161616] p-4 rounded-lg w-1/3 shadow-red-700/50 shadow-md">
+                <div className="h-[100px] flex flex-col bg-[#161616] p-4 rounded-lg w-1/3 shadow-red-700/50 shadow-md ">
                     <h3 className="text-lg font-semibold">Razem Kupione</h3>
                     <p className="text-red-700 text-3xl font-bold">-2600$</p>
                 </div>

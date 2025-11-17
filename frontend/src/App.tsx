@@ -3,7 +3,7 @@ import DashboardLayout from "@/components/DashboardLayout";
 import StartSection from "@/components/sections/StartSection";
 import TransactionSection from "@/components/sections/TransactionSection";
 // import PortfolioSection from "@/components/sections/PortfolioSection";
-// import DashboardSection from "@/components/sections/DashboardSection";
+ import DashboardSection from "@/components/sections/DashboardSection";
 // import AnalyticsSection from "@/components/sections/AnalyticsSection";
 // import ReportsSection from "@/components/sections/ReportsSection";
 // import UsersSection from "@/components/sections/UsersSection";
@@ -20,8 +20,8 @@ export default function Home() {
         return <TransactionSection />;
       // case "portfolio":
       //   return <PortfolioSection />;
-      // case "dashboard":
-      //   return <DashboardSection />;
+      case "dashboard":
+        return <DashboardSection />;
       // case "analytics":
       //   return <AnalyticsSection />;
       // case "reports":
