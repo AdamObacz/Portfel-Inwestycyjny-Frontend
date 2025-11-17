@@ -12,7 +12,7 @@ export default function DashboardSection() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
 
                 {/* Przychody */}
-                <div className="h-40 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md">
+                <div className="h-40 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md hover:bg-gray-500/20 transition-colors hover:shadow-white/50 hover:scale-105 hover:transition-transform">
                     <div className="flex justify-between">
                         <h2 className="text-xl">Łączne przychody</h2>
                         <DollarSign size={25} color="white"/>    
@@ -25,7 +25,7 @@ export default function DashboardSection() {
                 </div>
 
                 {/* Aktywność użytkowników */}
-                <div className="h-40 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md">
+                <div className="h-40 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md hover:bg-gray-500/20 transition-colors hover:shadow-white/50 hover:scale-105 hover:transition-transform">
                     <div className="flex justify-between">
                         <h2 className="text-xl">Aktywność użytkowników</h2>
                         <Users size={25} color="white"/>  
@@ -37,7 +37,7 @@ export default function DashboardSection() {
                 </div>
 
                 {/* Obroty */}
-                <div className="h-40 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md">
+                <div className="h-40 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md hover:bg-gray-500/20 transition-colors hover:shadow-white/50 hover:scale-105 hover:transition-transform">
                     <div className="flex justify-between">
                         <h2 className="text-xl">Obroty</h2>
                         <ShoppingCart size={25} color="white"/>   
@@ -49,7 +49,7 @@ export default function DashboardSection() {
                 </div>
 
                 {/* Wzrost */}
-                <div className="h-40 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md">
+                <div className="h-40 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md hover:bg-gray-500/20 transition-colors hover:shadow-white/50 hover:scale-105 hover:transition-transform">
                     <div className="flex justify-between">
                         <h2 className="text-xl">Wzrost</h2>
                         <TrendingUp size={25} color="white"/>   
@@ -65,7 +65,7 @@ export default function DashboardSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 
                 {/* Aktywności */}
-                <div className="h-60 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md">
+                <div className="h-60 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md hover:bg-gray-500/20 transition-colors hover:shadow-white/50 hover:scale-105 hover:transition-transform">
                     <h2 className=" text-2xl font-semibold m-2">Ostanie Aktywności</h2>
                     <ol className="m-2 py-1">
                         <li className="mb-2">      
@@ -84,7 +84,7 @@ export default function DashboardSection() {
                 </div>
 
                 {/* Szybkie statystyki */}
-                <div className="h-60 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md">
+                <div className="h-60 bg-[#161616] rounded-lg p-4 shadow-gray-500/50 shadow-md hover:bg-gray-500/20 transition-colors hover:shadow-white/50 hover:scale-105 hover:transition-transform">
                     <h2 className=" text-2xl font-semibold m-2">Szybkie statystyki</h2>
                     <div className="justify-between flex m-2">
                         <p className="text-gray-400 w-full text-base">współczynnik konwersji:</p>
