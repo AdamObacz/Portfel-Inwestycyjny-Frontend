@@ -34,7 +34,7 @@ export default function TransactionSection() {
                         {/* Przykładowe dane transakcji */}
                         <tr className="border-b-[1px]">
                             <td className=" px-4 py-4"><p className="text-yellow-500 font-semibold">Bitcoin</p></td>
-                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center">Kupno</p></td>
+                            <td className=" px-4 py-4 justify-items-center"><p className=" bg-blue-600 rounded-lg font-semibold w-20 text-center text-sm">Kupno</p></td>
                             <td className=" px-4 py-4 text-center">10</td>
                             <td className=" px-4 py-4 text-center">$1000.00</td>
                             <td className=" px-4 py-4 text-center"><p className=" text-green-400">+$1000</p></td>
