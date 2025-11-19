@@ -18,7 +18,7 @@ export default function TransactionSection() {
             </div>
 
             {/* tabela z historią transakcji */}
-            <div className="bg-[#161616] p-4 rounded-lg shadow-gray-500/50 shadow-md">
+            <div className="bg-[#161616] p-4 rounded-lg shadow-gray-500 shadow-sm">
                 <h2 className="text-2xl mb-4">Historia transakcji</h2>
                 <div className="overflow-x-auto px-2">
                     <table className="min-w-[900px] w-full table-auto">
