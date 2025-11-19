@@ -1,7 +1,15 @@
 const API_URL = "http://localhost:8000/api/auth";
 
+//IMPORTANT: Nie uzywajcie fetcha, tylko tego customAxiosa mojego z utils.ts
+//Poniewaz on ma ustawione withCredentials na true i dzieki temu cookiesy sa wysylane z kazdym zapytaniem do backendu
+//Dodatkowo ogarnia błędy jeszcze i ne musicie wtedy try..catchowac w komponentach
 export const authAPI = {
-  register: async (email: string, password: string, firstName?: string, lastName?: string) => {
+  register: async (
+    email: string,
+    password: string,
+    firstName?: string,
+    lastName?: string
+  ) => {
     const response = await fetch(`${API_URL}/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
