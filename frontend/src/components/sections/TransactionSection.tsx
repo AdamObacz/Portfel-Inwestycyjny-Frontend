@@ -45,9 +45,9 @@ export default function TransactionSection() {
                                 <td className="p-4 align-middle text-left">
                                     <span className="inline-block bg-blue-700 border border-[#292929] text-xs font-semibold px-3 py-1 rounded-lg">Kupno</span>
                                 </td>
-                                <td className="p-4 align-middle text-left">0.5</td>
-                                <td className="p-4 align-middle text-left text-gray-300">$45,000.00</td>
-                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$22,500.00</span></td>
+                                <td className="p-4 align-middle text-left">0.75</td>
+                                <td className="p-4 align-middle text-left text-gray-300">$42,000.00</td>
+                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$31,500.00</span></td>
                                 <td className="p-4 align-middle text-left">
                                     <p className="text-gray-400">2025-11-13</p>
                                     <p className="text-gray-400 text-sm">14:32</p>
@@ -85,9 +85,9 @@ export default function TransactionSection() {
                                 <td className="p-4 align-middle text-left">
                                     <span className="inline-block bg-blue-700 border border-[#292929] text-xs font-semibold px-3 py-1 rounded-lg">Kupno</span>
                                 </td>
-                                <td className="p-4 align-middle text-left">1000</td>
-                                <td className="p-4 align-middle text-left text-gray-300">$0.95</td>
-                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$950.00</span></td>
+                                <td className="p-4 align-middle text-left">5000</td>
+                                <td className="p-4 align-middle text-left text-gray-300">$0.90</td>
+                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$4,500.00</span></td>
                                 <td className="p-4 align-middle text-left">
                                     <p className="text-gray-400">2025-11-11</p>
                                     <p className="text-gray-400 text-sm">16:45</p>
@@ -105,9 +105,9 @@ export default function TransactionSection() {
                                 <td className="p-4 align-middle text-left">
                                     <span className="inline-block bg-blue-700 border border-[#292929] text-xs font-semibold px-3 py-1 rounded-lg">Kupno</span>
                                 </td>
-                                <td className="p-4 align-middle text-left">10</td>
-                                <td className="p-4 align-middle text-left text-gray-300">$180.00</td>
-                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$1,800.00</span></td>
+                                <td className="p-4 align-middle text-left">20</td>
+                                <td className="p-4 align-middle text-left text-gray-300">$170.00</td>
+                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$3,400.00</span></td>
                                 <td className="p-4 align-middle text-left">
                                     <p className="text-gray-400">2025-11-10</p>
                                     <p className="text-gray-400 text-sm">08:00</p>
@@ -125,9 +125,9 @@ export default function TransactionSection() {
                                 <td className="p-4 align-middle text-left">
                                     <span className="inline-block bg-blue-700 border border-[#292929] text-xs font-semibold px-3 py-1 rounded-lg">Kupno</span>
                                 </td>
-                                <td className="p-4 align-middle text-left">5000</td>
-                                <td className="p-4 align-middle text-left text-gray-300">$2.50</td>
-                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$12,500.00</span></td>
+                                <td className="p-4 align-middle text-left">10000</td>
+                                <td className="p-4 align-middle text-left text-gray-300">$2.40</td>
+                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$24,000.00</span></td>
                                 <td className="p-4 align-middle text-left">
                                     <p className="text-gray-400">2025-11-09</p>
                                     <p className="text-gray-400 text-sm">11:20</p>
@@ -145,9 +145,9 @@ export default function TransactionSection() {
                                 <td className="p-4 align-middle text-left">
                                     <span className="inline-block bg-blue-700 border border-[#292929] text-xs font-semibold px-3 py-1 rounded-lg">Kupno</span>
                                 </td>
-                                <td className="p-4 align-middle text-left">100</td>
-                                <td className="p-4 align-middle text-left text-gray-300">$8.50</td>
-                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$850.00</span></td>
+                                <td className="p-4 align-middle text-left">200</td>
+                                <td className="p-4 align-middle text-left text-gray-300">$8.00</td>
+                                <td className="p-4 align-middle text-left"><span className="text-red-700 font-bold">-$1,600.00</span></td>
                                 <td className="p-4 align-middle text-left">
                                     <p className="text-gray-400">2025-11-08</p>
                                     <p className="text-gray-400 text-sm">13:50</p>
@@ -167,14 +167,14 @@ export default function TransactionSection() {
                         <p className="font-semibold">Razem wydane na kupno</p>
                     </div>
                     <div className="w-full p-4">
-                        <p className="text-3xl font-bold text-red-700">-$39,600.00</p>
+                        <p className="text-3xl font-bold text-red-700">-$64,500.00</p>
                     </div>
                 </div>
 
                 {/* zysk/strata */}
                 <div className="h-32 bg-[#161616] rounded-lg shadow-gray-500 shadow-sm">
                     <div className="flex justify-between items-center p-4">
-                        <p className="font-semibold">Zysk/Strata</p>
+                        <p className="font-semibold">Razem uzyskane ze sprzedaży</p>
                     </div>
                     <div className="w-full p-4">
                         <p className="font-bold text-3xl text-green-400">+$12,500.00</p>

@@ -5,7 +5,7 @@ export default function StartSection() {
     return (
         <>
             {/* header */}
-            <div className="h-[180px]">
+            <div className="mb-4">
                 <h2 className="font-bold text-3xl mb-2.5">Witaj w świecie kryptowalut!</h2>
                 <p className="w-full text-gray-400 text-base">Handluj, przechowuj i zarządzaj swoimi kryptowalutami w jednym bezpiecznym miejscu.</p>
             </div>
@@ -19,7 +19,7 @@ export default function StartSection() {
                         <Wallet size={18} color="rgb(29 78 216)" />
                     </div>
                     <div className="w-full p-4">
-                        <p className="text-3xl font-bold">$45,230.50</p>
+                        <p className="text-3xl font-bold">$93,850.00</p>
                         <p className="text-gray-400 text-xs">Całkowita wartość zasobów</p>
                     </div>
                 </div>
@@ -31,8 +31,8 @@ export default function StartSection() {
                         <TrendingUp size={18} color="rgb(74 222 128)" />
                     </div>
                     <div className="w-full p-4">
-                        <p className="font-bold text-3xl">$12,450.00</p>
-                        <p className="text-green-400 text-xs">+38,2% (ostatnie 3 miesiące)</p>
+                        <p className="font-bold text-3xl">+$5,850.00</p>
+                        <p className="text-green-400 text-xs">+6.7% (od czasu zakupu)</p>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ export default function StartSection() {
                         <CreditCard size={18} color="rgb(96 165 250)" />
                     </div>
                     <div className="w-full p-4">
-                        <p className="font-bold text-3xl">12</p>
+                        <p className="font-bold text-3xl">6</p>
                         <p className="text-blue-400 text-xs">Różne kryptowaluty</p>
                     </div>
                 </div>
