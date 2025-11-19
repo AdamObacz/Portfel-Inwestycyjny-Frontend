@@ -2,7 +2,7 @@ import { useState } from "react";
 import DashboardLayout from "@/components/DashboardLayout";
 import StartSection from "@/components/sections/StartSection";
 import TransactionSection from "@/components/sections/TransactionSection";
-// import PortfolioSection from "@/components/sections/PortfolioSection";
+import PortfolioSection from "@/components/sections/PortfolioSection";
  import DashboardSection from "@/components/sections/DashboardSection";
 // import AnalyticsSection from "@/components/sections/AnalyticsSection";
 // import ReportsSection from "@/components/sections/ReportsSection";
@@ -18,8 +18,8 @@ export default function Home() {
         return <StartSection />;
       case "transactions":
         return <TransactionSection />;
-      // case "portfolio":
-      //   return <PortfolioSection />;
+      case "portfolio":
+        return <PortfolioSection />;
       case "dashboard":
         return <DashboardSection />;
       // case "analytics":
