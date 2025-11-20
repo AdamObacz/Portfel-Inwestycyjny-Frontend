@@ -4,9 +4,7 @@ import axios from "axios";
  * Similar to the popular 'classnames' library.
  */
 export function cn(...classes: (string | undefined | null | false)[]): string {
-  return classes
-    .filter((cls): cls is string => typeof cls === "string" && cls.length > 0)
-    .join(" ");
+  return classes.filter((cls): cls is string => typeof cls === "string" && cls.length > 0).join(" ");
 }
 
 export const customAxios = axios.create({
@@ -17,8 +15,7 @@ export const customAxios = axios.create({
 export const axiosErrorHandler = (error: any) => {
   console.log("Axios error:", error);
   let translationKey = "errors.internal_server_error";
-  if (error.response?.data?.key)
-    translationKey = `errors.${error.response.data.key.toLowerCase()}`;
+  if (error.response?.data?.key) translationKey = `errors.${error.response.data.key.toLowerCase()}`;
 
   return {
     isError: true,

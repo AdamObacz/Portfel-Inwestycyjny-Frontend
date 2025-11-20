@@ -1,47 +1,33 @@
-const API_URL = "http://localhost:8000/api/auth";
+import { customAxios } from "@/lib/utils";
 
-//IMPORTANT: Nie uzywajcie fetcha, tylko tego customAxiosa mojego z utils.ts
-//Poniewaz on ma ustawione withCredentials na true i dzieki temu cookiesy sa wysylane z kazdym zapytaniem do backendu
-//Dodatkowo ogarnia błędy jeszcze i ne musicie wtedy try..catchowac w komponentach
+const API_URL = "/api/auth";
+
 export const authAPI = {
-  register: async (
-    email: string,
-    password: string,
-    firstName?: string,
-    lastName?: string
-  ) => {
-    const response = await fetch(`${API_URL}/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-      body: JSON.stringify({ email, password, firstName, lastName }),
+  register: async (email: string, password: string, firstName?: string, lastName?: string) => {
+    const response = await customAxios.post(`${API_URL}/register`, {
+      email,
+      password,
+      firstName,
+      lastName,
     });
-    return response.json();
+    return response.data;
   },
 
   login: async (email: string, password: string) => {
-    const response = await fetch(`${API_URL}/login`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-      body: JSON.stringify({ email, password }),
+    const response = await customAxios.post(`${API_URL}/login`, {
+      email,
+      password,
     });
-    return response.json();
+    return response.data;
   },
 
   getMe: async () => {
-    const response = await fetch(`${API_URL}/me`, {
-      method: "GET",
-      credentials: "include",
-    });
-    return response.json();
+    const response = await customAxios.get(`${API_URL}/me`);
+    return response.data;
   },
 
   logout: async () => {
-    const response = await fetch(`${API_URL}/logout`, {
-      method: "POST",
-      credentials: "include",
-    });
-    return response.json();
+    const response = await customAxios.post(`${API_URL}/logout`);
+    return response.data;
   },
 };
