@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Toaster } from "sonner";
 import DashboardLayout from "@/components/DashboardLayout";
 import StartSection from "@/components/sections/StartSection";
 import TransactionSection from "@/components/sections/TransactionSection";
@@ -7,7 +8,7 @@ import DashboardSection from "@/components/sections/DashboardSection";
 import AnalyticsSection from "@/components/sections/AnalyticsSection";
 import ReportsSection from "@/components/sections/ReportsSection";
 // import UsersSection from "@/components/sections/UsersSection";
-// import SettingsSection from "@/components/sections/SettingsSection";
+import SettingsSection from "@/components/sections/SettingsSection";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("start");
@@ -28,19 +29,31 @@ export default function Home() {
         return <ReportsSection />;
       case "users":
       //   return <UsersSection />;
-      // case "settings":
-      //   return <SettingsSection />;
+      case "settings":
+        return <SettingsSection />;
       default:
         return <StartSection />;
     }
   };
 
   return (
-    <DashboardLayout 
-      activeSection={activeSection} 
-      onSectionChange={setActiveSection}
-    >
-      {renderSection()}
-    </DashboardLayout>
+    <>
+      <DashboardLayout 
+        activeSection={activeSection} 
+        onSectionChange={setActiveSection}
+      >
+        {renderSection()}
+      </DashboardLayout>
+      <Toaster 
+        position="bottom-right" 
+        toastOptions={{
+          style: {
+            backgroundColor: '#272727',
+            color: 'white',
+            border: '1px solid #616161'
+          }
+        }}
+      />
+    </>
   );
 }
