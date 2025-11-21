@@ -36,7 +36,7 @@ export default function PortfolioSection() {
                 {/* zysk/strata */}
                 <div className="h-40 bg-[#161616] rounded-lg shadow-green-400 shadow-md">
                     <div className="flex justify-between items-center p-4">
-                        <p className="font-semibold">Liczba monet</p>
+                        <p className="font-semibold">Zysk/Strata</p>
                         <TrendingUp size={18} color="rgb(74 222 128)" />
                     </div>
                     <div className="w-full p-4">

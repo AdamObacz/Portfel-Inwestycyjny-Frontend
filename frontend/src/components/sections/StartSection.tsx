@@ -73,7 +73,7 @@ export default function StartSection() {
 
                 {/* ostatnie transakcje */}
                 <div className="bg-[#161616] w-full rounded-lg shadow-sm shadow-gray-500 p-2">
-                    <h4 className="font-semibold px-4 py-3">Ostatnie transakcje</h4>
+                    <h4 className="font-semibold px-2 py-3">Ostatnie transakcje</h4>
                     <div className="flex justify-between px-2 py-2 border-b-[1px] border-gray-700 w-full">
                         <div>
                             <p className="font-semibold">Bitcoin (BTC)</p>
