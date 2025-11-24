@@ -7,7 +7,7 @@ import PortfolioSection from "@/components/sections/PortfolioSection";
 import DashboardSection from "@/components/sections/DashboardSection";
 import AnalyticsSection from "@/components/sections/AnalyticsSection";
 import ReportsSection from "@/components/sections/ReportsSection";
-// import UsersSection from "@/components/sections/UsersSection";
+import UsersSection from "@/components/sections/UsersSection";
 import SettingsSection from "@/components/sections/SettingsSection";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
       case "reports":
         return <ReportsSection />;
       case "users":
-      //   return <UsersSection />;
+        return <UsersSection />;
       case "settings":
         return <SettingsSection />;
       default:
