@@ -153,7 +153,7 @@ export default function UsersSection() {
                         <p className="text-gray-400">Aktywni użytkownicy</p>
                     </div>
                     <div className="w-full p-4">
-                        <p className="font-bold text-2xl">4</p>
+                        <p className="font-bold text-2xl">3</p>
                     </div>
                 </div>
 
