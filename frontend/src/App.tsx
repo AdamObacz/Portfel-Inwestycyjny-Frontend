@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Toaster } from "sonner";
 import DashboardLayout from "@/components/DashboardLayout";
+import LoginSection from "@/components/sections/LoginSection";
 import StartSection from "@/components/sections/StartSection";
 import TransactionSection from "@/components/sections/TransactionSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
@@ -11,7 +12,41 @@ import UsersSection from "@/components/sections/UsersSection";
 import SettingsSection from "@/components/sections/SettingsSection";
 
 export default function Home() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeSection, setActiveSection] = useState("start");
+
+  // Sprawdź sesję przy starcie aplikacji
+  useEffect(() => {
+    const checkSession = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/api/auth/me", {
+          credentials: "include", // Ważne - wysyła cookies
+        });
+        if (response.ok) {
+          setIsLoggedIn(true);
+        }
+      } catch (error) {
+        console.log("Not logged in");
+      }
+    };
+    checkSession();
+  }, []);
+
+  const handleLogout = async () => {
+    try {
+      await fetch("http://localhost:8000/api/auth/logout", {
+        method: "POST",
+        credentials: "include",
+      });
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
+    setIsLoggedIn(false);
+  };
+
+  if (!isLoggedIn) {
+    return <LoginSection onLogin={() => setIsLoggedIn(true)} />;
+  }
 
   const renderSection = () => {
     switch (activeSection) {
@@ -41,6 +76,7 @@ export default function Home() {
       <DashboardLayout 
         activeSection={activeSection} 
         onSectionChange={setActiveSection}
+        onLogout={handleLogout}
       >
         {renderSection()}
       </DashboardLayout>

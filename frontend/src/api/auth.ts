@@ -5,10 +5,10 @@ const API_URL = "/api/auth";
 export const authAPI = {
   register: async (email: string, password: string, firstName?: string, lastName?: string) => {
     const response = await customAxios.post(`${API_URL}/register`, {
-      email,
-      password,
       firstName,
       lastName,
+      email,
+      password,
     });
     return response.data;
   },

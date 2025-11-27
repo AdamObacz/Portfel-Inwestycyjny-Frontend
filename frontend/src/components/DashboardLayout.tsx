@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { Home, LayoutDashboard, BarChart3, Users, Settings, Menu, X, TrendingUp, FileText, Wallet } from "lucide-react";
+import { Home, LayoutDashboard, BarChart3, Users, Settings, Menu, X, TrendingUp, FileText, Wallet, LogOut } from "lucide-react";
 import { testApi } from "@/lib/api";
 import { useTranslation } from "react-i18next";
 
@@ -8,6 +8,7 @@ interface DashboardLayoutProps {
   children: React.ReactNode;
   activeSection: string;
   onSectionChange: (section: string) => void;
+  onLogout?: () => void;
 }
 
 const menuItems = [
@@ -21,7 +22,7 @@ const menuItems = [
   { id: "settings", label: "Ustawienia", icon: Settings },
 ];
 
-export default function DashboardLayout({ children, activeSection, onSectionChange }: DashboardLayoutProps) {
+export default function DashboardLayout({ children, activeSection, onSectionChange, onLogout }: DashboardLayoutProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
 
@@ -71,6 +72,19 @@ export default function DashboardLayout({ children, activeSection, onSectionChan
               );
             })}
           </nav>
+
+          {/* Logout button */}
+          {onLogout && (
+            <div className="mt-8 pt-4 border-t border-border">
+              <button
+                onClick={onLogout}
+                className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-muted-foreground hover:bg-red-500/10 hover:text-red-500 transition-colors text-left"
+              >
+                <LogOut className="w-5 h-5" />
+                <span className="font-medium">Wyloguj się</span>
+              </button>
+            </div>
+          )}
         </div>
       </aside>
 
